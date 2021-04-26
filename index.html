@@ -120,8 +120,7 @@
         <div class="swiper-button-prev swiper-button-white"></div>
       </div>
     </div>
-    <!-- width: 100%, insert bg -->
-    <div class="event clearfix">
+    <div class="event clearfix section--margin">
       <div class="inner">
         <div class="swiper-container second">
           <div class="swiper-wrapper">
@@ -150,12 +149,11 @@
         </div>
       </div>
     </div>
-    <div class="program clearfix">
+    <div class="program clearfix section--margin">
       <h3 class="tit">PROGRAM</h3>
       <p class="desc">경복궁에서 준비한 다양한 참여프로그램에 함께해주세요</p>
       <ul class="program__list-box">
         <li>
-          <!-- insert img -->
           <h4>고궁 음악회</h4>
           <ul>
             <li>날짜 : 2021. 10. 02. ~ 2021. 10. 03.</li>
@@ -167,7 +165,6 @@
           </div>
         </li>
         <li>
-          <!-- insert img -->
           <h4>경복궁 별빛야행</h4>
           <ul>
             <li>날짜 : 2021. 05. 28. ~ 2021. 06. 07.</li>
@@ -180,7 +177,6 @@
           </div>
         </li>
         <li>
-          <!-- insert img -->
           <h4>수라간 시식공감</h4>
           <ul>
             <li>날짜 : 2021. 05. 01. ~ 2021. 09. 30.</li>
@@ -194,20 +190,17 @@
         </li>
       </ul>
     </div>
-    <div class="publication clearfix">
+    <div class="publication clearfix section--margin">
       <div class="inner">
         <div>
           <h3 class="tit">PUBLICATION</h3>
           <p class="desc">간행물을 통해 경복궁의 최신소식을 확인하세요</p>
         </div>
-        <p>
-          <img src="#" alt="문화재청 간행물 사진">
-        </p>
+        <img src="/src/images/publication_img.png" alt="문화재청 간행물 사진">
         <a href="#">자세히보기 <i class="fas fa-plus"></i></a>
       </div>
-      <!-- insert bg -->
     </div>
-    <div class="best-post clearfix">
+    <div class="best-post clearfix section--margin">
       <h3 class="tit">THE BEST POST</h3>
       <p class="desc">매월 1일 여러분들의 SNS사진을 함께 감상해 보세요</p>
       <ul class="best-post__sns-list">
@@ -218,7 +211,7 @@
             </span>
             <a href="#">best_pic0302</a>
           </div>
-          <img src="#" alt="best_pic0302님의 사진">
+          <img src="/src/images/the-best-photo_img_01.png" alt="best_pic0302님의 사진">
         </li>
         <li>
           <div class="sns">
@@ -227,7 +220,7 @@
             </span>
             <a href="#">eu_eu.__.</a>
           </div>
-          <img src="#" alt="eu_eu.__.님의 사진">
+          <img src="/src/images/the-best-photo_img_02.png" alt="eu_eu.__.님의 사진">
         </li>
         <li>
           <div class="sns">
@@ -236,11 +229,11 @@
             </span>
             <a href="#">photo_luv_0830</a>
           </div>
-          <img src="#" alt="photo_luv_0830님의 사진">
+          <img src="/src/images/the-best-photo_img_03.png" alt="photo_luv_0830님의 사진">
         </li>
       </ul>
     </div>
-    <div class="notice clearfix">
+    <div class="notice clearfix section--margin">
       <h3 class="tit">NOTICE</h3>
       <div class="notice__list-box">
         <ul>
@@ -268,7 +261,7 @@
       </div>
     </div>
   </div>
-  <div class="footer">
+  <div class="footer section--margin">
     <div>
       <h2 class="footer__logo">경복궁</h2>
       <ul class="footer__menu">
@@ -332,7 +325,7 @@
   <script>
     var swiper = new Swiper('.second', {
       direction: 'vertical',
-      slidesPerView: 1,
+      slidesPerView: 'auto',
       spaceBetween: 0,
       mousewheel: true,
       pagination: {

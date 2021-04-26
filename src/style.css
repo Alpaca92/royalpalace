@@ -8,10 +8,11 @@
 @import "/src/screens/main.css";
 
 /* import font */
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 :root {
   --main-color: #222222;
+  --main-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -19,7 +20,14 @@
 }
 
 body {
-  font-family: "NanumSquare", sans-serif;
+  font: 16px/1.2 "Noto Sans KR", sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.section--margin {
+  width: 100%;
+  min-width: 1200px;
+  margin-top: 90px;
 }
 
 a {
@@ -52,10 +60,12 @@ a {
   font-weight: 700;
   font-size: 60px;
   color: var(--main-color);
+  text-align: center;
 }
 
 .desc {
   font-size: 20px;
   color: #888;
   margin-top: 10px;
+  text-align: center;
 }
