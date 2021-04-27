@@ -2,14 +2,14 @@
 @import "reset.css";
 
 /* import variables */
-@import "/src/variables.css";
+@import "variables.css";
 
 /* import components */
-@import "/src/components/header.css";
-@import "/src/components/footer.css";
+@import "components/header.css";
+@import "components/footer.css";
 
 /* import screens */
-@import "/src/screens/main.css";
+@import "screens/main.css";
 
 /* import font */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
