@@ -15,7 +15,7 @@
 
 .footer__logo {
   float: left;
-  background: url(src/images/footer_logo.png) no-repeat 0 0;
+  background: url(../images/footer_logo.png) no-repeat 0 0;
   width: 240px;
   height: 70px;
   text-indent: -9999px;
@@ -63,7 +63,7 @@
 .footer__banner {
   float: left;
   text-indent: -9999px;
-  background: url(src/images/foot_banner.png) no-repeat 0 0;
+  background: url(../images/foot_banner.png) no-repeat 0 0;
   width: 147px;
   height: 64px;
   margin-right: 70px;
