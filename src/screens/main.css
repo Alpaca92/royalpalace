@@ -33,37 +33,37 @@
 }
 
 .bigvisual .swiper-slide:first-child {
-  background: url(/src/images/bic_visual_01.png) no-repeat center center;
+  background: url(src/images/bic_visual_01.png) no-repeat center center;
 }
 
 .bigvisual .swiper-slide:nth-child(2) {
-  background: url(/src/images/bic_visual_02.png) no-repeat center center;
+  background: url(src/images/bic_visual_02.png) no-repeat center center;
 }
 
 .bigvisual .swiper-slide:last-child {
-  background: url(/src/images/bic_visual_03.png) no-repeat center center;
+  background: url(src/images/bic_visual_03.png) no-repeat center center;
 }
 
 /* section_01: event */
 
 .second .swiper-slide:first-child {
-  background: url(/src/images/event_img_01.png) no-repeat center center;
+  background: url(src/images/event_img_01.png) no-repeat center center;
 }
 
 .second .swiper-slide:nth-child(2) {
-  background: url(/src/images/event_img_02.png) no-repeat center center;
+  background: url(src/images/event_img_02.png) no-repeat center center;
 }
 
 .second .swiper-slide:nth-child(3) {
-  background: url(/src/images/event_img_03.png) no-repeat center center;
+  background: url(src/images/event_img_03.png) no-repeat center center;
 }
 
 .second .swiper-slide:nth-child(4) {
-  background: url(/src/images/event_img_04.png) no-repeat center center;
+  background: url(src/images/event_img_04.png) no-repeat center center;
 }
 
 .second .swiper-slide:last-child {
-  background: url(/src/images/event_img_05.png) no-repeat center center;
+  background: url(src/images/event_img_05.png) no-repeat center center;
 }
 
 .event {
@@ -72,7 +72,7 @@
 
 .event::before {
   content: "";
-  background: url(/src/images/event_bg.png) no-repeat center center;
+  background: url(src/images/event_bg.png) no-repeat center center;
   position: absolute;
   left: 0;
   top: 50px;
@@ -157,15 +157,15 @@
 }
 
 .program__list-box > li:first-child {
-  background-image: url(/src/images/program_img_01.png);
+  background-image: url(src/images/program_img_01.png);
 }
 
 .program__list-box > li:nth-child(2) {
-  background-image: url(/src/images/program_img_02.png);
+  background-image: url(src/images/program_img_02.png);
 }
 
 .program__list-box > li:last-child {
-  background-image: url(/src/images/program_img_03.png);
+  background-image: url(src/images/program_img_03.png);
 }
 
 .program__list-box > li + li {
@@ -256,7 +256,7 @@
 
 .publication::before {
   content: "";
-  background: url(/src/images/publication_bg.png) no-repeat center center;
+  background: url(src/images/publication_bg.png) no-repeat center center;
   position: absolute;
   left: 250px;
   bottom: 50px;
