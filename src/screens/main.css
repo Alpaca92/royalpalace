@@ -17,6 +17,21 @@
   z-index: 9999;
 }
 
+.bigvisual .swiper-slide div {
+  height: 850px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 350px;
+  line-height: 80px;
+}
+
+.bigvisual .swiper-slide div span {
+  font-size: 40px;
+  color: #fff;
+}
+
 .bigvisual .swiper-slide:first-child {
   background: url(/src/images/bic_visual_01.png) no-repeat center center;
 }
@@ -85,7 +100,7 @@
   text-align: start;
 }
 
-.event__content-box > p:nth-of-type(2) {
+.event__sentence {
   margin-top: 70px;
   font-size: 25px;
   line-height: 40px;
