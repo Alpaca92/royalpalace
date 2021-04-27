@@ -1,0 +1,138 @@
+.footer {
+  width: 100%;
+  min-width: 1200px;
+  height: 200px;
+  background-color: #222;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.footer > div {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.footer__logo {
+  float: left;
+  background: url(/src/images/footer_logo.png) no-repeat 0 0;
+  width: 240px;
+  height: 70px;
+  text-indent: -9999px;
+  opacity: 0.3;
+  margin: 0 40px 85px 0;
+}
+
+.footer__menu {
+  float: left;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.footer__menu > li {
+  float: left;
+  position: relative;
+}
+
+.footer__menu > li a {
+  color: var(--footer-main-color);
+}
+
+.footer__menu > li:nth-child(2) a {
+  color: #f90;
+}
+
+.footer__menu > li + li {
+  margin-left: 30px;
+}
+
+.footer__menu > li + li::before {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: var(--footer-sub-color);
+  position: absolute;
+  left: -14px;
+  top: 2px;
+}
+
+.footer__container {
+  float: right;
+}
+
+.footer__banner {
+  float: left;
+  text-indent: -9999px;
+  background: url(/src/images/foot_banner.png) no-repeat 0 0;
+  width: 147px;
+  height: 64px;
+  margin-right: 70px;
+}
+
+.footer__family {
+  float: left;
+  position: relative;
+  font-size: 16px;
+}
+
+.footer__family > p {
+  line-height: 38px;
+  text-indent: 20px;
+  width: 148px;
+  height: 38px;
+  border: 1px solid var(--footer-main-color);
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+.footer__family i {
+  position: relative;
+  top: 4px;
+}
+
+.footer__family > ul {
+  position: absolute;
+  left: 0;
+  top: -301px;
+  width: 148px;
+  border: 1px solid var(--footer-main-color);
+  background-color: #fff;
+  display: none;
+}
+
+.footer__family a {
+  display: block;
+  line-height: 50px;
+  width: 148px;
+  height: 50px;
+  text-indent: 10px;
+}
+
+.footer__copyright {
+  float: left;
+}
+
+.footer__copyright address,
+.footer__copyright li,
+.footer__copyright p {
+  color: var(--footer-sub-color);
+}
+
+.footer__copyright li:nth-child(2) {
+  float: left;
+  margin-right: 10px;
+}
+
+.footer__copyright > ul li + li,
+.footer__copyright > p {
+  margin-top: 10px;
+}
+
+.footer__family:hover ul {
+  display: block;
+}
+
+.footer__family a:hover {
+  font-weight: 600;
+  color: #948467;
+}

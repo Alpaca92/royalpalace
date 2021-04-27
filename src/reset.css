@@ -127,3 +127,64 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* common styling */
+
+* {
+  color: var(--main-color);
+}
+
+body {
+  font: 16px/1.2 "Noto Sans KR", sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.section--margin {
+  width: 100%;
+  min-width: 1200px;
+  margin-top: 90px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hidden {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  position: absolute;
+  left: -9999px;
+}
+
+.content--margin {
+  margin-top: 80px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tit {
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.desc {
+  font-size: 20px;
+  color: #888;
+  margin-top: 10px;
+  text-align: center;
+}

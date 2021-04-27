@@ -1,0 +1,7 @@
+:root {
+  --main-color: #222;
+  --point-color: #948467;
+  --main-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  --footer-main-color: #888;
+  --footer-sub-color: #666;
+}
