@@ -30,7 +30,6 @@
   top: 0;
   z-index: 9999;
   background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* hover ? */
 }
 
 .header__wrap {
@@ -134,7 +133,7 @@
   position: absolute;
   display: none;
   left: 0;
-  top: 81px;
+  top: 80px;
   width: 100%;
   min-width: 1200px;
   height: 300px;
@@ -142,9 +141,13 @@
 }
 
 .gnb__depth1:hover dl,
-.gnb:hover .gnb__depth2,
+.gnb:hover .gnb__depth2 {
+  display: block;
+}
+
 .gnb:hover .gnb__bg {
   display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .gnb__depth2 > li:hover a {

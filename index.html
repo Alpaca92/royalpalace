@@ -97,9 +97,9 @@
       <div class="tnb">
         <a href="#">ENG</a>
         <ul class="tnb__sns">
-          <li><a href="#">twitter</a></li>
-          <li><a href="#">instagram</a></li>
-          <li><a href="#">youtube</a></li>
+          <li><a target="_blank" href="https://twitter.com/royalpalacego">twitter</a></li>
+          <li><a target="_blank" href="https://www.instagram.com/gyeongbokgung_palace_official/">instagram</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/c/chluvu/featured">youtube</a></li>
         </ul>
       </div>
     </div>
@@ -108,9 +108,24 @@
     <h2 class="hidden">메인컨텐츠</h2>
     <div class="bigvisual swiper-container first">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
+        <div class="swiper-slide">
+          <div class="inner">
+            조선 시대 임금 즉위식의 현장<br />
+            <span>근정전(勤政殿)</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner">
+            조선 시대의 연회장<br />
+            <span>경회루(慶會樓)</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="inner">
+            연못안의 작은 쉼터<br />
+            <span>향원정(香遠亭)</span>
+          </div>
+        </div>
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination swiper-pagination-white"></div>
@@ -136,7 +151,7 @@
         <div class="event__content-box">
           <h3 class="tit">EVENT</h3>
           <p class="desc">사랑하는 사람과 함께 경복궁의 야경을 감상해보세요</p>
-          <p>달 밝은 밤 도심 속 궁궐 야경 이색체험<br />
+          <p class="event__sentence">달 밝은 밤 도심 속 궁궐 야경 이색체험<br />
             <span>‘2021년 상반기 경복궁 야간 관람’</span>에 여러분을 초대합니다.
           </p>
           <div class="event__reserve">
@@ -334,6 +349,40 @@
         clickable: true,
       },
     });
+  </script>
+  <!-- event paragraph -->
+  <script>
+    const p = document.querySelector(".event__sentence");
+
+    let NUM = 0;
+
+    function increaseNum() {
+      return ++NUM;
+    }
+
+    function printParagraph(num) {
+      const paragraph = [
+        `달 밝은 밤 도심 속 궁궐 야경 이색체험<br /><span>‘경복궁 야간 관람’</span>에 여러분을 초대합니다.`,
+        `사랑하는 사람과 함께 즐기는 야경<br /><span>‘경복궁 야간 관람’</span>을 여러분께 소개합니다.`,
+        `가족과 함께하는 즐거운 밤산책<br /><span>‘경복궁 야간 관람’</span>이 여러분을 기다립니다.`,
+        `조선시대의 정취를 맘껏 느낄 수 있는<br /><span>‘경복궁 야간 관람’</span>에서 여러분을 기다립니다.`,
+        `도심속에서 빛나는 궁궐<br /><span>‘경복궁 야간 관람’</span>에서 빛나는 추억을 선사합니다.`,
+      ];
+
+      p.innerHTML = paragraph[num % 5];
+    }
+
+    function handlePragraph() {
+      printParagraph(NUM);
+      increaseNum();
+    }
+
+    function init() {
+      printParagraph(NUM);
+      setInterval(handlePragraph, 3000);
+    }
+
+    init();
   </script>
   <!-- create horizontal scroll bar with position fixed -->
   <script>
