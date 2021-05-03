@@ -1,0 +1,71 @@
+.lnb {
+  width: 100%;
+  min-width: 1200px;
+  font-size: 16px;
+  line-height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+.lnb .inner {
+  height: 60px;
+}
+
+.lnb .inner > a {
+  float: left;
+  width: 60px;
+  text-indent: -9999px;
+  background: url(../images/lnb_home_icon.png) no-repeat center center;
+  border-left: 1px solid #ddd;
+}
+
+.lnb .lnb__depth1,
+.lnb .lnb__depth2 {
+  float: left;
+  width: 200px;
+  text-indent: 20px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  position: relative;
+}
+
+.lnb .lnb__depth2 {
+  width: 260px;
+  border-left-style: none;
+}
+
+.lnb i {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+}
+
+.lnb .lnb__depth1 p,
+.lnb .lnb__depth2 p {
+  position: relative;
+}
+
+.lnb .lnb__depth1 ul,
+.lnb .lnb__depth2 ul {
+  z-index: 9;
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  left: -1px;
+  top: 60px;
+  border: 1px solid #ddd;
+  width: 200px;
+}
+
+.lnb .lnb__depth2 ul {
+  width: 260px;
+}
+
+.lnb .lnb__depth1:hover ul,
+.lnb .lnb__depth2:hover ul {
+  display: block;
+}
+
+.lnb .lnb__depth1 a:hover,
+.lnb .lnb__depth2 a:hover {
+  color: var(--point-color);
+}

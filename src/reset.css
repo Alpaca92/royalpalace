@@ -142,7 +142,8 @@ body {
 .section--margin {
   width: 100%;
   min-width: 1200px;
-  margin-top: 90px;
+  /* margin-top: 90px; */
+  padding: 100px 0;
 }
 
 a {

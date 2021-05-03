@@ -33,15 +33,15 @@
 }
 
 .bigvisual .swiper-slide:first-child {
-  background: url(../images/bic_visual_01.png) no-repeat center center;
+  background: url(../images/big_visual_01.png) no-repeat center center;
 }
 
 .bigvisual .swiper-slide:nth-child(2) {
-  background: url(../images/bic_visual_02.png) no-repeat center center;
+  background: url(../images/big_visual_02.png) no-repeat center center;
 }
 
 .bigvisual .swiper-slide:last-child {
-  background: url(../images/bic_visual_03.png) no-repeat center center;
+  background: url(../images/big_visual_03.png) no-repeat center center;
 }
 
 /* section_01: event */
@@ -75,7 +75,7 @@
   background: url(../images/event_bg.png) no-repeat center center;
   position: absolute;
   left: 0;
-  top: 50px;
+  top: 150px;
   width: 100%;
   min-width: 1200px;
   height: 323px;
@@ -84,19 +84,31 @@
 }
 
 .second {
+  position: relative;
   float: left;
   width: 500px;
   height: 530px;
 }
 
+.event__btn-box {
+  position: absolute;
+  width: 80px;
+  left: 210px;
+  bottom: 20px;
+}
+
+.event__btn-box .swiper-button-white {
+  transform: scale(0.3);
+}
+
 .event__content-box {
   float: right;
   width: 610px;
-  padding-top: 90px;
+  margin-top: 90px;
 }
 
-.event__content-box > .tit,
-.event__content-box > .desc {
+.event__content-box .tit,
+.event__content-box .desc {
   text-align: start;
 }
 
@@ -135,16 +147,12 @@
   margin-left: 10px;
 }
 
-/* section_02: event */
-
-.program {
-  text-align: center;
-}
+/* section_02: program */
 
 .program__list-box > li {
   float: left;
   width: 370px;
-  height: 630px;
+  padding-top: 370px;
   background-repeat: no-repeat;
   text-align: left;
   text-indent: 15px;
@@ -173,36 +181,34 @@
 }
 
 .program__list-box h4 {
-  padding-top: 390px;
+  line-height: 60px;
   font-size: 20px;
 }
 
 .program__list-box ul {
-  padding-top: 20px;
-  height: 90px;
+  height: 75px;
+  margin-bottom: 15px;
 }
 
 .program__list-box ul > li {
   color: #888;
   font-size: 14px;
+  line-height: 25px;
 }
 
-.program__list-box ul > li + li {
-  padding-top: 10px;
-}
-
-.program__list-box ul > li:nth-child(3) {
+.program__list-box ul li:nth-child(3) {
   text-indent: 50px;
 }
 
 .program__recruit {
+  text-align: center;
   padding-top: 10px;
   width: 340px;
   margin: 0 auto;
 }
 
-.program__recruit > p,
-.program__recruit > a {
+.program__recruit p,
+.program__recruit a {
   float: left;
   width: 170px;
   height: 80px;
@@ -211,27 +217,43 @@
   line-height: 80px;
 }
 
-.program__recruit > p {
+.program__recruit p {
   background-color: #fdfaeb;
+  margin-bottom: 15px;
 }
 
 .program__list-box > li:first-child a {
-  background-color: #df837c;
-  color: #fff;
+  background: linear-gradient(to top, #df837c 50%, #f1f1f1 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: all 0.3s ease-out;
+  font-weight: 600;
+  color: #df837c;
 }
 
 .program__list-box > li:nth-child(2) a,
 .program__list-box > li:last-child a {
-  background-color: #b4a994;
+  background: linear-gradient(to top, #000 50%, #f1f1f1 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: all 0.3s ease-out;
+}
+
+.program__list-box > li:first-child a:hover {
+  background-position: bottom left;
+  color: #fff;
+}
+
+.program__list-box > li:nth-child(2) a:hover,
+.program__list-box > li:last-child a:hover {
+  background-position: bottom left;
+  color: #fff;
 }
 
 /* section_03: publication */
 
-.publication {
+.publication .inner div {
   position: relative;
-}
-
-.publication .inner > div {
   float: left;
   text-align: end;
   margin: 400px 100px 0 50px;
@@ -239,46 +261,59 @@
 
 .publication .inner a {
   float: left;
-  text-align: end;
-  margin: 160px 0 0 355px;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  margin: 30px 0 0 340px;
   color: var(--point-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .publication i {
   color: var(--point-color);
+  transition: all 0.2s ease-in-out;
 }
 
-.publication img {
+.publication .inner a:hover {
+  background-color: var(--point-color);
+  color: #fff;
+}
+
+.publication .inner a:hover i {
+  color: #fff;
+}
+
+.publication .inner > p {
   float: right;
   box-shadow: var(--main-shadow);
   margin-right: 50px;
 }
 
-.publication::before {
+.publication .inner div::before {
   content: "";
   background: url(../images/publication_bg.png) no-repeat center center;
   position: absolute;
-  left: 250px;
-  bottom: 50px;
+  left: -100px;
+  bottom: -200px;
   width: 400px;
   height: 400px;
-  transform: scale(0.65);
   z-index: -1;
 }
 
 /* section_04: the best post */
 
-.best-post__sns-list > li {
+.best-post__sns-list li {
   float: left;
   position: relative;
   transition: all 0.5s ease-in-out;
 }
 
-.best-post__sns-list > li + li {
+.best-post__sns-list li + li {
   margin-left: 30px;
 }
 
-.best-post__sns-list > li img {
+.best-post__sns-list li img {
   border-radius: 50px;
 }
 
@@ -294,27 +329,27 @@
   transition: all 0.3s ease-in-out;
 }
 
-.best-post__sns-list > li:hover {
+.best-post__sns-list li:hover {
   transform: scale(1.03);
 }
 
-.best-post__sns-list > li:hover > .sns i,
-.best-post__sns-list > li:hover > .sns a {
+.best-post__sns-list li:hover .sns i,
+.best-post__sns-list li:hover .sns a {
   color: var(--point-color);
 }
 
 /* section_05: notice */
 
-.notice__list-box > li {
+.notice__list-box li {
   float: left;
   transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(170, 170, 170, 0.5);
 }
 
-.notice__list-box > li:first-child {
+.notice__list-box li:first-child {
   width: 628px;
   height: 228px;
   padding: 35px;
-  border: 1px solid #aaa;
 }
 
 .notice__list-box div {
@@ -329,17 +364,16 @@
   margin-bottom: 85px;
 }
 
-.notice__list-box > li:nth-child(2),
-.notice__list-box > li:last-child {
+.notice__list-box li:nth-child(2),
+.notice__list-box li:last-child {
   margin-left: 20px;
   width: 408px;
   height: 68px;
-  border: 1px solid #aaa;
   padding: 35px;
   font-size: 16px;
 }
 
-.notice__list-box > li:last-child {
+.notice__list-box li:last-child {
   margin-top: 20px;
 }
 
@@ -357,13 +391,13 @@
 }
 
 .notice__list-box span {
-  font-size: 10px;
+  font-size: 12px;
   float: left;
   color: #666;
 }
 
 .notice__list-box a {
-  font-size: 10px;
+  font-size: 12px;
   float: right;
   color: var(--point-color);
 }
@@ -372,7 +406,7 @@
   color: var(--point-color);
 }
 
-.notice__list-box > li:hover {
+.notice__list-box li:hover {
   box-shadow: var(--main-shadow);
-  border: 1px solid var(--point-color);
+  border: 1px solid rgba(148, 132, 103, 0.2);
 }

@@ -7,9 +7,12 @@
 /* import components */
 @import "components/header.css";
 @import "components/footer.css";
+@import "components/sub-bigvisual.css";
+@import "components/lnb.css";
 
 /* import screens */
 @import "screens/main.css";
+@import "screens/sub1-1.css";
 
 /* import font */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");

@@ -1,0 +1,88 @@
+.sub-bigvisual {
+  background-image: url(../images/sub_big_visual_01.png);
+}
+
+.sub-reservation > h2 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.precautions {
+  margin-top: 100px;
+}
+
+.precautions__sub-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 50px;
+  padding-bottom: 30px;
+}
+
+.precautions__sub-title:last-child {
+  padding-bottom: 70px;
+}
+
+.precautions__description li {
+  font-weight: 400;
+  font-size: 14px;
+  text-indent: 30px;
+  line-height: 30px;
+  color: var(--sub-color);
+}
+
+.precautions em {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #f00;
+}
+
+.main__calendar {
+  margin-top: 33px;
+}
+
+.calendar__btn-container {
+  margin: 0 20px 20px 0;
+  float: left;
+}
+
+.calendar__btn-container button {
+  float: left;
+  height: 40px;
+  background-color: unset;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-align: center;
+}
+
+.calendar__btn-container .today-btn {
+  width: 100px;
+  border-radius: 35px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.calendar__btn-container .prev-btn,
+.calendar__btn-container .next-btn {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.calendar__btn-container button + button {
+  margin-left: 5px;
+}
+
+.calendar__current-date {
+  float: left;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.calendar__btn-container button:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+}

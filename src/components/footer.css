@@ -1,16 +1,14 @@
 .footer {
   width: 100%;
   min-width: 1200px;
-  height: 200px;
+  height: 230px;
   background-color: #222;
   font-weight: 300;
   font-size: 12px;
 }
 
-.footer > div {
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 40px;
+.footer .inner {
+  padding-top: 60px;
 }
 
 .footer__logo {
@@ -29,24 +27,24 @@
   margin-bottom: 30px;
 }
 
-.footer__menu > li {
+.footer__menu li {
   float: left;
   position: relative;
 }
 
-.footer__menu > li a {
+.footer__menu a {
   color: var(--footer-main-color);
 }
 
-.footer__menu > li:nth-child(2) a {
+.footer__menu li:nth-child(2) a {
   color: #f90;
 }
 
-.footer__menu > li + li {
+.footer__menu li + li {
   margin-left: 30px;
 }
 
-.footer__menu > li + li::before {
+.footer__menu li + li::before {
   content: "";
   width: 1px;
   height: 14px;
@@ -67,6 +65,7 @@
   width: 147px;
   height: 64px;
   margin-right: 70px;
+  opacity: 0.3;
 }
 
 .footer__family {
@@ -75,22 +74,22 @@
   font-size: 16px;
 }
 
-.footer__family > p {
+.footer__family p {
   line-height: 38px;
   text-indent: 20px;
   width: 148px;
   height: 38px;
-  border: 1px solid var(--footer-main-color);
-  background-color: #fff;
-  color: var(--main-color);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #888;
 }
 
 .footer__family i {
   position: relative;
   top: 4px;
+  color: #888;
 }
 
-.footer__family > ul {
+.footer__family ul {
   position: absolute;
   left: 0;
   top: -301px;
@@ -116,6 +115,7 @@
 .footer__copyright li,
 .footer__copyright p {
   color: var(--footer-sub-color);
+  line-height: 25px;
 }
 
 .footer__copyright li:nth-child(2) {
@@ -123,9 +123,14 @@
   margin-right: 10px;
 }
 
-.footer__copyright > ul li + li,
-.footer__copyright > p {
-  margin-top: 10px;
+.footer__family:hover p {
+  color: #222;
+  background-color: #fff;
+  border: 1px solid var(--footer-main-color);
+}
+
+.footer__family:hover i {
+  color: #222;
 }
 
 .footer__family:hover ul {

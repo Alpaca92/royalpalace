@@ -1,6 +1,6 @@
 /* skip-nav  */
 
-.skip-nav > a {
+.skip-nav a {
   width: 100%;
   min-width: 1200px;
   height: 30px;
@@ -14,9 +14,10 @@
   top: -999px;
 }
 
-.skip-nav > a:focus {
+.skip-nav a:focus {
   outline: none;
   top: 0;
+  z-index: 99999;
 }
 
 /* header */
@@ -24,7 +25,6 @@
 .header {
   width: 100%;
   min-width: 1200px;
-  height: 80px;
   position: fixed;
   left: 0;
   top: 0;
@@ -33,9 +33,7 @@
 }
 
 .header__wrap {
-  width: 1200px;
   height: 80px;
-  margin: 0 auto;
 }
 
 .header__logo {
@@ -61,7 +59,7 @@
   float: left;
 }
 
-.gnb__depth1 > ul {
+.gnb__depth1 ul {
   position: relative;
 }
 
@@ -72,10 +70,10 @@
   line-height: 80px;
 }
 
-.gnb__depth1 > dl {
+.gnb__depth1 dl {
   position: absolute;
   left: -270px;
-  top: 100px;
+  top: 90px;
   z-index: 99;
   width: 200px;
   display: none;
@@ -104,7 +102,7 @@
 }
 
 .gnb__depth1 dt {
-  padding-top: 150px;
+  padding-top: 140px;
   font-size: 14px;
   line-height: 40px;
   color: #444;
@@ -118,15 +116,17 @@
 .gnb__depth2 {
   display: none;
   margin-top: 20px;
+  height: 220px;
   z-index: 99;
 }
 
 .gnb__depth2 a {
   display: block;
+  color: #666;
   text-align: center;
   font-size: 14px;
   line-height: 14px;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .gnb__bg {
@@ -136,7 +136,7 @@
   top: 80px;
   width: 100%;
   min-width: 1200px;
-  height: 300px;
+  height: 270px;
   background-color: #fff;
 }
 
@@ -167,12 +167,13 @@
 }
 
 .tnb > a {
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 80px;
   color: #666;
-  margin: 32px 20px 0 0;
+  margin-right: 20px;
 }
 
-.tnb__sns > li {
+.tnb__sns li {
   float: left;
   width: 20px;
   height: 20px;
@@ -180,24 +181,24 @@
   margin-top: 30px;
 }
 
-.tnb__sns > li + li {
+.tnb__sns li + li {
   margin-left: 10px;
 }
 
-.tnb__sns > li > a {
+.tnb__sns li a {
   display: block;
   width: 20px;
   height: 20px;
 }
 
-.tnb__sns > li:first-child {
+.tnb__sns li:first-child {
   background: url(../images/tnb_sns_twitter.png) no-repeat;
 }
 
-.tnb__sns > li:nth-child(2) {
+.tnb__sns li:nth-child(2) {
   background: url(../images/tnb_sns_insta.png) no-repeat;
 }
 
-.tnb__sns > li:last-child {
+.tnb__sns li:last-child {
   background: url(../images/tnb_sns_youtube.png) no-repeat;
 }

@@ -1,0 +1,16 @@
+.sub-bigvisual {
+  width: 100%;
+  min-width: 1200px;
+  height: 481px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sub-bigvisual p {
+  z-index: 999;
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+  padding-top: 265px;
+}
