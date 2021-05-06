@@ -1,6 +1,7 @@
 :root {
   --main-color: #222;
   --sub-color: #444;
+  --history-line-color: #888;
   --point-color: rgb(148, 132, 103);
   --main-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   --footer-main-color: #888;

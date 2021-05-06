@@ -1,0 +1,148 @@
+.sub-bigvisual--img05 {
+  background-image: url(../images/sub_big_visual_05.png);
+}
+
+.sub-history__title {
+  font-size: 40px;
+  font-weight: 300;
+  position: relative;
+}
+
+.sub-history__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 370px;
+  top: 23px;
+  width: 300px;
+  height: 1px;
+  background-color: var(--history-line-color);
+}
+
+.sub-history__title span {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.sub-history > p {
+  margin-bottom: 100px;
+}
+
+.sub-history__lists li {
+  position: relative;
+}
+
+.sub-history__lists li:nth-child(2n-1) {
+  width: 50%;
+  margin-left: 50%;
+  padding-left: 110px;
+  text-align: left;
+}
+
+.sub-history__lists li:nth-child(2n) {
+  margin-right: 50%;
+  padding-right: 110px;
+  text-align: right;
+}
+
+.sub-history__lists li + li {
+  margin-top: 125px;
+}
+
+.sub-history__lists li:nth-child(3) {
+  margin-top: 131px;
+}
+
+.sub-history__lists li:nth-child(4) {
+  margin-top: 95px;
+}
+
+.sub-history__lists li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  background-color: var(--history-line-color);
+}
+
+.sub-history__lists li:nth-child(2n-1)::before {
+  left: 0px;
+  bottom: 52px;
+}
+
+.sub-history__lists li:nth-child(2n)::before {
+  right: -1px;
+  bottom: 52px;
+}
+
+.sub-history__lists li:first-child::before {
+  display: none;
+}
+
+.sub-history__lists li:nth-child(3)::before {
+  bottom: 88px;
+}
+
+.sub-history__lists li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: var(--history-line-color);
+}
+
+.sub-history__lists li:nth-child(2n-1)::after {
+  left: 5px;
+  top: 24px;
+}
+
+.sub-history__lists li:nth-child(2n)::after {
+  right: 4px;
+  top: 24px;
+}
+
+.sub-history__year {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.sub-history__year::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--point-color);
+}
+
+.sub-history__lists li:nth-child(2n-1) .sub-history__year::after {
+  left: -4px;
+  top: 20px;
+}
+
+.sub-history__lists li:nth-child(2n) .sub-history__year::after {
+  right: -5px;
+  top: 20px;
+}
+
+.sub-history__elem {
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--sub-color);
+  line-height: 30px;
+}
+
+.sub-history__elem span {
+  font-weight: 400;
+}
+
+.sub-history__lists li:nth-child(2n-1) span {
+  margin-right: 10px;
+}
+
+.sub-history__lists li:nth-child(2n) span {
+  margin-left: 10px;
+}

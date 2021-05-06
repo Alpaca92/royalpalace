@@ -1,0 +1,26 @@
+.sub-bigvisual--img04 {
+  background-image: url(../images/sub_big_visual_04.png);
+}
+
+.seasons__container {
+  padding-top: 100px;
+}
+
+.seasons__container .season {
+  float: left;
+  width: 299px;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.seasons__container .on {
+  background-color: #222;
+  color: #fff;
+}
+
+.seasons__container .season:hover {
+  background-color: #222;
+  color: #fff;
+}

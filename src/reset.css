@@ -142,7 +142,6 @@ body {
 .section--margin {
   width: 100%;
   min-width: 1200px;
-  /* margin-top: 90px; */
   padding: 100px 0;
 }
 
@@ -188,4 +187,20 @@ a {
   color: #888;
   margin-top: 10px;
   text-align: center;
+}
+
+.antialiasing-border-to-bottom {
+  border-width: 1px;
+  border-color: #ddd;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+}
+
+.antialiasing-border-to-right {
+  border-width: 1px;
+  border-color: #ddd;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
 }
