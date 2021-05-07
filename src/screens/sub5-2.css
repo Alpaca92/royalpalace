@@ -33,7 +33,7 @@
 }
 
 .sub-history__lists li:nth-child(2n-1) {
-  width: 50%;
+  width: 490px;
   margin-left: 50%;
   padding-left: 110px;
   text-align: left;
@@ -130,7 +130,7 @@
 
 .sub-history__elem {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--sub-color);
   line-height: 30px;
 }
