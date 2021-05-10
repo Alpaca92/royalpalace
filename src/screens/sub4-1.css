@@ -13,6 +13,7 @@
   line-height: 50px;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .seasons__container .on {
